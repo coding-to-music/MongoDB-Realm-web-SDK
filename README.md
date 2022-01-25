@@ -34,6 +34,8 @@ For this tutorial, you will need:
 ## Create a Realm Application
 Access Realm by clicking the link at the top in your MongoDB Atlas UI, above your cluster.
 
+![image](https://github.com/coding-to-music/MongoDB-Realm-web-SDK/blob/main/images/create-realm-app.png?raw=true)
+
 ## Access Realm in the MongoDB Atlas UI
 Create a Realm application. If possible, keep it close (same region) to your Atlas Cluster.
 
