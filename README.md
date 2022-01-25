@@ -29,24 +29,36 @@ For this tutorial, you will need:
 - A free tier Atlas M0 cluster (or higher).
 - Load the sample data set as we will need some sample documents from the sample_mflix.movies collection.
 - Import the sample data set menu in MongoDB Atlas
+![image](https://github.com/coding-to-music/MongoDB-Realm-web-SDK/blob/main/images/import-sample-data.png?raw=true)
 - We will also use jQuery (to keep things as simple as possible) and the Realm Web SDK but it's just a couple of imports in the JavaScript code. You don't need anything else.
 
 ## Create a Realm Application
 Access Realm by clicking the link at the top in your MongoDB Atlas UI, above your cluster.
 
-![image](https://github.com/coding-to-music/MongoDB-Realm-web-SDK/blob/main/images/create-realm-app.png?raw=true)
-
 ## Access Realm in the MongoDB Atlas UI
+![image](https://github.com/coding-to-music/MongoDB-Realm-web-SDK/blob/main/images/realm-link.png?raw=true)
+
 Create a Realm application. If possible, keep it close (same region) to your Atlas Cluster.
 
 ## Create the Realm Application
+
+![image](https://github.com/coding-to-music/MongoDB-Realm-web-SDK/blob/main/images/create-realm-app.png?raw=true)
+
 Our Realm Web SDK needs to authenticate users to work properly. In this tutorial, we will use the anonymous authentication to keep it simple.
 
 ## Activating the anonymous authentication in the Realm application
+
+![image](https://github.com/coding-to-music/MongoDB-Realm-web-SDK/blob/main/images/realm-anonymous-auth.png?raw=true)
+
 We need to tell our Realm application what our authenticated users can do with each collection. In this case, we want them to access the sample_mflix.movies collection for reads only.
 
+![image](https://github.com/coding-to-music/MongoDB-Realm-web-SDK/blob/main/images/realm-collection-rules.png?raw=true)
+
 Allow read-only access in the collection rules to the sample_mflix.movies collection
+
 Don't forget to click on Configure Collection to validate this choice. You also need to deploy these modifications.
+
+![image](https://github.com/coding-to-music/MongoDB-Realm-web-SDK/blob/main/images/deploy.png.1?raw=true)
 
 Click review draft & deploy to deploy the modifications we did to our realm application
 ## Create a Mini Website with the Realm Web SDK
@@ -129,9 +141,12 @@ const find_movies = async () => {
 };
 ```
 
+## Retrieve the Realm AppID in the Realm UI
+
 The first line of data.js needs your Realm APPID. You can find it here:
 
-## Retrieve the Realm AppID in the Realm UI
+![image](https://github.com/coding-to-music/MongoDB-Realm-web-SDK/blob/main/images/realm-appid.png?raw=true)
+
 In my case, my first line looks like this, but please use your own APPID:
 
 ```java
@@ -139,22 +154,36 @@ const APP_ID = 'realmwebsdk-uuldw';
 ```
 
 ## Deploy the Website in MongoDB Realm Static Hosting
+
+![image](https://github.com/coding-to-music/MongoDB-Realm-web-SDK/blob/main/images/realm-static-hosting.png?raw=true)
+
 ## MongoDB Realm - Hosting website feature in the UI
 Upload your two files index.html and data.js using the UPLOAD FILES button. Realm will tell you that you are overwriting ./index.html. This is the expected result.
 
 ## Result of the upload of the 2 files in the MongoDB Realm UI
+
+![image](https://github.com/coding-to-music/MongoDB-Realm-web-SDK/blob/main/images/realm-hosted-files.png?raw=true)
+
 Don't forget to review and deploy your modification!
+
+![image](https://github.com/coding-to-music/MongoDB-Realm-web-SDK/blob/main/images/14:04 deploy.png?raw=true)
 
 ## Click review draft & deploy to deploy the modifications we did to our realm application
 At this point, you should be able to access your website with the provided link, but the DNS can take up to 15 minutes to propagate.
 
 ## Link to the hosted website and DNS warning message
+
+![image](https://github.com/coding-to-music/MongoDB-Realm-web-SDK/blob/main/images/realm-dns-warning.png?raw=true)
+
 Try to open the provided link and if that doesn't work yet, feel free to open your local index.html file in your preferred web browser. You should see something like this:
 
 The website with 2 buttons "login" and "find 20 movies".
 Click on LOGIN. You are now authenticated with an anonymous user.
 
 ## The website now displays the user ID.
+
+![image](https://github.com/coding-to-music/MongoDB-Realm-web-SDK/blob/main/images/realm-users.png?raw=true)
+
 You can find this user in your Realm application in the App Users menu in MongoDB Realm. Of course, you could use a better authentication provider to secure your application correctly.
 
 ## The same user ID in the Realm UI.
@@ -163,6 +192,11 @@ If you click on the FIND 20 MOVIES button, you should now see a bunch of movie t
 ## The website now displays 20 movies titles
 ## Wrapping Up
 In this tutorial, you learned how to set up your first website using MongoDB Realm Web SDK. We used jQuery for this simple example, but any recent and popular JavaScript front-end technology like React, Angular, or Vue.js would also work.
+
+
+![image](https://github.com/coding-to-music/MongoDB-Realm-web-SDK/blob/main/images/website1.png?raw=true)
+![image](https://github.com/coding-to-music/MongoDB-Realm-web-SDK/blob/main/images/website2.png?raw=true)
+![image](https://github.com/coding-to-music/MongoDB-Realm-web-SDK/blob/main/images/website3.png?raw=true)
 
 ## MongoDB Realm provides a number of SDKs that can also be useful for your project:
 
