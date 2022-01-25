@@ -166,7 +166,7 @@ Upload your two files index.html and data.js using the UPLOAD FILES button. Real
 
 Don't forget to review and deploy your modification!
 
-![image](https://github.com/coding-to-music/MongoDB-Realm-web-SDK/blob/main/images/14:04 deploy.png?raw=true)
+![image](https://github.com/coding-to-music/MongoDB-Realm-web-SDK/blob/main/images/deploy.png?raw=true)
 
 ## Click review draft & deploy to deploy the modifications we did to our realm application
 At this point, you should be able to access your website with the provided link, but the DNS can take up to 15 minutes to propagate.
@@ -177,14 +177,18 @@ At this point, you should be able to access your website with the provided link,
 
 Try to open the provided link and if that doesn't work yet, feel free to open your local index.html file in your preferred web browser. You should see something like this:
 
+![image](https://github.com/coding-to-music/MongoDB-Realm-web-SDK/blob/main/images/website1.png?raw=true)
+
 The website with 2 buttons "login" and "find 20 movies".
 Click on LOGIN. You are now authenticated with an anonymous user.
 
+![image](https://github.com/coding-to-music/MongoDB-Realm-web-SDK/blob/main/images/website2.png?raw=true)
+
 ## The website now displays the user ID.
 
-![image](https://github.com/coding-to-music/MongoDB-Realm-web-SDK/blob/main/images/realm-users.png?raw=true)
-
 You can find this user in your Realm application in the App Users menu in MongoDB Realm. Of course, you could use a better authentication provider to secure your application correctly.
+
+![image](https://github.com/coding-to-music/MongoDB-Realm-web-SDK/blob/main/images/realm-users.png?raw=true)
 
 ## The same user ID in the Realm UI.
 If you click on the FIND 20 MOVIES button, you should now see a bunch of movie titles that come from your MongoDB Atlas sample collection.
@@ -194,8 +198,6 @@ If you click on the FIND 20 MOVIES button, you should now see a bunch of movie t
 In this tutorial, you learned how to set up your first website using MongoDB Realm Web SDK. We used jQuery for this simple example, but any recent and popular JavaScript front-end technology like React, Angular, or Vue.js would also work.
 
 
-![image](https://github.com/coding-to-music/MongoDB-Realm-web-SDK/blob/main/images/website1.png?raw=true)
-![image](https://github.com/coding-to-music/MongoDB-Realm-web-SDK/blob/main/images/website2.png?raw=true)
 ![image](https://github.com/coding-to-music/MongoDB-Realm-web-SDK/blob/main/images/website3.png?raw=true)
 
 ## MongoDB Realm provides a number of SDKs that can also be useful for your project:
