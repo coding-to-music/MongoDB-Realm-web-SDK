@@ -13,6 +13,7 @@ const login = async () => {
     }
 };
 
+
 // Function executed by the "FIND 20 MOVIES" button.
 const find_movies = async () => {
     let collMovies;
