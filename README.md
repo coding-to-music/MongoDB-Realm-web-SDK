@@ -155,9 +155,10 @@ const APP_ID = 'realmwebsdk-uuldw';
 
 ## Deploy the Website in MongoDB Realm Static Hosting
 
+## MongoDB Realm - Hosting website feature in the UI
+
 ![image](https://github.com/coding-to-music/MongoDB-Realm-web-SDK/blob/main/images/realm-static-hosting.png?raw=true)
 
-## MongoDB Realm - Hosting website feature in the UI
 Upload your two files index.html and data.js using the UPLOAD FILES button. Realm will tell you that you are overwriting ./index.html. This is the expected result.
 
 ## Result of the upload of the 2 files in the MongoDB Realm UI
