@@ -6,7 +6,9 @@ https://github.com/coding-to-music/MongoDB-Realm-web-SDK
 
 https://realmwebsdk-suybq.mongodbstitch.com/
 
+
 ## Introduction
+
 
 
 In this tutorial blog post, you will learn how to retrieve data from a MongoDB Atlas cluster using the MongoDB Realm Web SDK and display it in a very basic website hosted in MongoDB Realm Static Hosting.
